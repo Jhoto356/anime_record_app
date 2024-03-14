@@ -7,10 +7,12 @@ class AnimeApp {
 
   }
   void _init() {
-    Get.put(const LoginScreen());
-    Get.put(LoginViewModel());
-    Get.put(LoginRepository());
     Get.put(LoginDomain());
+    Get.put(LoginRepository());
+    Get.put(LoginViewModel());
+
+
+    Get.put(LoginScreen());
 
   }
 
