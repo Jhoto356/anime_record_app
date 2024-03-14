@@ -42,3 +42,19 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Visual Studio Code will pale build artifacts here
+.classpath
+.project
+.settings/
+.vscode/
+
+# Pubspec.lock
+pubspec.lock # library relate lock files
+
+# Autogenerates files by platform
+/generated_plugin_registrant.cc**
+/generated_plugin_registrant.h**
+/generated_plugins.cmake**
+/GeneratedPluginRegistrant.swift**
+
