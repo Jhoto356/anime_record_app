@@ -1,10 +1,21 @@
-import 'package:collection_app/ui/login/LoginUsesCases.dart';
-import 'package:get/get.dart';
+class LoginRepository {
+  int incrementCounter(int currentCounter) {
+    try {
+      var newValue = currentCounter+1;
+      if (newValue > 0 && newValue > currentCounter) {
+        return newValue;
 
-class LoginRepository extends GetxController {
-  LoginUsesCases incrementCounter(int currentCounter) {
-    currentCounter++;
-    return Success(currentCounter);
+      } else {
+        return currentCounter;
+
+      }
+
+    } catch (e) {
+      return currentCounter;
+
+    }
+
+
   }
 
 }
